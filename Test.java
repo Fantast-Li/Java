@@ -1,20 +1,21 @@
+package Study11_5;
 
-class Per {
-    public int age = 19 ;
-    public String name ="西西";
-    public void show(){
-        System.out.println("我对象叫"+name+",今年芳龄"+age);
-    }
-
-}
 public class Test {
-    public static void main(String []args){
-        Per person = new Per();
-        person.show();
-        Per person1 =new Per();
-        person1.age=18;
-        person1.name="二狗子";
-        person1.show();
-    }
-}
+public static void main(String[]args){
+    MyArray myArray = new MyArray(3);
+    //{1,2,3,4}->{1,2,10,3,4}
+    myArray.add(1);
+    myArray.add(2);
+    myArray.add(3);
+    myArray.add(4);
+    myArray.add(4);
+    myArray.add(4,10);
+    myArray.find(4);
+    myArray.contains(10);
+    myArray.size();
+    myArray.set(2,15);
+    myArray.remove(4);
+    myArray.print();
 
+}
+}
